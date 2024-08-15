@@ -1,9 +1,10 @@
 call plug#begin()
 
-" List your plugins here
 Plug 'ellisonleao/gruvbox.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
-set background=dark " or light if you want light mode
-colorscheme gruvbox
+luafile _init.lua
